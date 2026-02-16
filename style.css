@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.social li a {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(145deg, var(--clr1), var(--clr0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+  transition: 0.4s;
+  box-shadow:
+    0 0 10px var(--clr0),
+    0 0 30px var(--clr1);
+}
+
+/* GLOW HALO */
+.social li a::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  background: radial-gradient(circle, var(--clr2), transparent);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.4s;
+  filter: blur(12px);
+}
+
+/* HOVER EFFECT */
+.social li a:hover {
+  transform: translateY(-12px) scale(1.1);
+  box-shadow:
+    0 0 20px var(--clr0),
+    0 0 50px var(--clr2);
+}
+
+.social li a:hover::before {
+  opacity: 1;
+}
+
+/* ICON */
+.social li a i {
+  z-index: 1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.social li a {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(145deg, var(--clr1), var(--clr0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+  transition: 0.4s;
+  box-shadow:
+    0 0 10px var(--clr0),
+    0 0 30px var(--clr1);
+}
+
+/* GLOW HALO */
+.social li a::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  background: radial-gradient(circle, var(--clr2), transparent);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.4s;
+  filter: blur(12px);
+}
+
+/* HOVER EFFECT */
+.social li a:hover {
+  transform: translateY(-12px) scale(1.1);
+  box-shadow:
+    0 0 20px var(--clr0),
+    0 0 50px var(--clr2);
+}
+
+.social li a:hover::before {
+  opacity: 1;
+}
+
+/* ICON */
+.social li a i {
+  z-index: 1;
+}
